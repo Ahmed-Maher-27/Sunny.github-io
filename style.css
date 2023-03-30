@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) , url(image/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sunny{
+    color: aqua;
+    font-family: 'Sacramento', cursive;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.title{
+    font-size: 2.5rem;
+    width: 150px;
+    
+}
+
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: aqua;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 2;
+}
+
+
+.text-box h1{
+    font-size: 62px;
+    margin-top: 30px;
+}
+
+.text-box p{
+    margin: 7px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid aqua;
+    background: aqua;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links {
+        position: absolute;
+        background: aqua;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+.nav-links ul {
+    padding: 30px;
+
+}
+}
+
+
+/* _____________course_______________________- */
+
+.courses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100PX;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgb(0,0, 0, 0.2);
+}
+
+
+
+
+/* _______campus__________ */
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60 px; 
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+
+}
+
+
+
+
+.loyar{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+.loyar:hover{
+    background: rgba(42, 163, 185, 0.498);
+}
+
+.loyar h3{
+    width: 100px;
+    font-weight:500;
+    color: #000;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+
+}
+
+
+.loyar:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+
+/* 
+_____________________facilities_________________ --> */
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding: 0;
+
+}
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+/* __________________________________testimonials____________________- */
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonials-col img{
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+
+.testimonials-col p{
+    padding: 0;
+}
+
+
+.testimonials-col h3 {
+    font-family: 'Sacramento', cursive;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* <!-- ______________________call for action__________________ --> */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(image/ban.png); 
+    background-position: center;
+    background-size:cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;  
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* ______________________footer________________________- */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+
+.social{
+    margin-top: 3.5rem;
+}
+
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem; 
+    transition: 0.4s;
+}
+
+.social img:hover{
+    transform: scale(1.2);
+}
